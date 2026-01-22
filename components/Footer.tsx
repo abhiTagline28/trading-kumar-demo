@@ -1,10 +1,10 @@
 import Link from 'next/link';
 
-export default function Footer() {
+export default function Footer(): React.JSX.Element {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-white">
+    <footer className="bg-gray-100">
       <div className="mx-auto w-[85%] px-4 py-12 sm:px-6 lg:px-8">
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
           {/* Resources */}
@@ -170,9 +170,9 @@ export default function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="mt-12 border-t border-gray-200 pt-8">
+        <div className="mt-12 border-t border-gray-300 pt-8">
           <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
-            <div className="flex flex-wrap gap-4 text-sm text-gray-600">
+            <div className="flex flex-wrap items-center gap-4 text-sm text-gray-600">
               <span>Copyright {currentYear}, Kumar Singh All Rights Reserved</span>
               <Link
                 href="/terms"

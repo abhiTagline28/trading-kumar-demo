@@ -6,6 +6,7 @@ import PopularPrograms from '@/components/PopularPrograms';
 import MentorshipBanner from '@/components/MentorshipBanner';
 import CommunitySection from '@/components/CommunitySection';
 import TestimonialsCarousel from '@/components/TestimonialsCarousel';
+import SEOSection from '@/components/SEOSection';
 import Footer from '@/components/Footer';
 
 export default function Home() {
@@ -20,6 +21,7 @@ export default function Home() {
         <MentorshipBanner />
         <CommunitySection />
         <TestimonialsCarousel />
+        <SEOSection />
       </main>
       <Footer />
     </div>
