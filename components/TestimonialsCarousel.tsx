@@ -29,7 +29,7 @@ export default function TestimonialsCarousel() {
 
   return (
     <section className="bg-gray-50 py-16 lg:py-24">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto w-[85%] px-4 sm:px-6 lg:px-8">
         <div className="relative">
           {/* Carousel Container */}
           <div className="relative overflow-hidden">

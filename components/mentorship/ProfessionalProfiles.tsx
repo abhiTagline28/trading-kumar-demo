@@ -28,7 +28,7 @@ const profiles: ProfessionalProfile[] = [
 export default function ProfessionalProfiles(): ReactElement {
   return (
     <section className="bg-gray-50 py-16 md:py-24">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto w-[85%] px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-4xl text-center space-y-6 mb-12">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900">
             Why Kumar Singh is the best mentor to learn professional trading.

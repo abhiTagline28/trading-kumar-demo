@@ -4,7 +4,7 @@ import { type ReactElement } from 'react';
 export default function AboutHero(): ReactElement {
   return (
     <section className="bg-black text-white py-16 md:py-24">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto w-[85%] px-4 sm:px-6 lg:px-8">
         <div className="grid gap-8 lg:grid-cols-2 lg:items-center lg:gap-12">
           {/* Left: Text Content */}
           <div className="space-y-6">

@@ -16,7 +16,7 @@ const badges: EliteBadge[] = [
 export default function EliteBadgeRow(): ReactElement {
   return (
     <section className="bg-gray-50 py-16 md:py-24">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto w-[85%] px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-8">
           <p className="text-sm text-gray-600 mb-2">[The &quot;Elite Badge&quot; Row]</p>
           <p className="text-gray-700 font-medium">

@@ -28,7 +28,7 @@ const benefits: Benefit[] = [
 export default function WhyChooseUs(): ReactElement {
   return (
     <section className="bg-white py-16 md:py-24">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto w-[85%] px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-4xl">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-12 text-center">
             Why These Professionals Choose Us:

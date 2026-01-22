@@ -4,7 +4,7 @@ import Button from '@/components/programs/Button';
 export default function PricingSection(): ReactElement {
   return (
     <section className="bg-gray-50 py-12 md:py-16">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto w-[85%] px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-4xl space-y-8">
           <div>
             <h2 className="mb-4 text-3xl font-bold text-black">

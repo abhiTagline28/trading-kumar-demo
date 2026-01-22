@@ -4,7 +4,7 @@ import Image from 'next/image';
 export default function PopularPrograms() {
   return (
     <section className="bg-gradient-to-br from-blue-50 to-blue-100 py-16 lg:py-24">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto w-[85%] px-4 sm:px-6 lg:px-8">
         <div className="mb-8 text-center">
           <h2 className="text-3xl font-bold text-blue-900 lg:text-4xl">
             Our Popular Programs

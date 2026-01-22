@@ -27,7 +27,7 @@ const mentorshipOptions: MentorshipOption[] = [
 export default function Path1InstitutionalMentorship(): ReactElement {
   return (
     <section className="bg-gray-50 py-12 md:py-16">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto w-[85%] px-4 sm:px-6 lg:px-8">
         <div className="mb-8">
           <h2 className="mb-2 text-3xl font-bold text-black">
             Path 1: The Institutional Mentorship — Our #1 Program for Serious Traders

@@ -4,7 +4,7 @@ import Button from '@/components/programs/Button';
 export default function MessageToProfessional(): ReactElement {
   return (
     <section className="bg-white py-16 md:py-24">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto w-[85%] px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-4xl space-y-8">
           <div className="bg-gray-50 rounded-lg p-6 md:p-8 space-y-4">
             <p className="text-gray-700 leading-relaxed">

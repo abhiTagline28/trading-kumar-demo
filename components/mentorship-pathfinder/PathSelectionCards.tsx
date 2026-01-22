@@ -38,7 +38,7 @@ const pathCards: PathCard[] = [
 export default function PathSelectionCards(): ReactElement {
   return (
     <section className="bg-white py-12 md:py-16">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto w-[85%] px-4 sm:px-6 lg:px-8">
         <div className="grid gap-8 md:grid-cols-3">
           {pathCards.map((card, index) => (
             <div

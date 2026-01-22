@@ -9,37 +9,8 @@ export default function Header() {
 
   return (
     <header className="sticky top-0 z-50 bg-white shadow-sm">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        {/* Contact Info Bar */}
-        <div className="flex items-center justify-center border-b border-gray-200 py-2">
-          <div className="flex items-center gap-2 text-sm text-gray-600">
-            <span>Global Mentorship Support</span>
-            <svg
-              className="h-4 w-4"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
-              />
-            </svg>
-            <a href="tel:+919999866667" className="hover:text-black">
-              +91 9999866667
-            </a>
-          </div>
-        </div>
-
-        {/* Tagline */}
-        <div className="flex items-center justify-center py-3">
-          <p className="text-center text-sm text-gray-600">
-            Experience unmatched, world-class trading education built to develop disciplined, high-performance traders.
-          </p>
-        </div>
-
+      <div className="mx-auto w-[85%] px-4 sm:px-6 lg:px-8">
+        {/* Primary Navigation Bar */}
         <div className="flex h-20 items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center">
@@ -53,7 +24,7 @@ export default function Header() {
                 type="button"
                 onMouseEnter={() => setIsCoursesOpen(true)}
                 onMouseLeave={() => setIsCoursesOpen(false)}
-                className="flex items-center gap-1 text-gray-700 hover:text-black"
+                className="flex items-center gap-1 rounded border border-black bg-white px-3 py-1.5 text-sm font-medium text-black transition-colors hover:bg-gray-50"
               >
                 All Courses
                 <svg
@@ -384,6 +355,32 @@ export default function Header() {
               )}
             </svg>
           </button>
+        </div>
+
+        {/* Secondary Information Bar */}
+        <div className="flex flex-col items-center justify-between gap-2 border-t border-gray-200 py-3 sm:flex-row">
+          <p className="text-center text-sm text-gray-600 sm:text-left">
+            Experience unmatched, world-class trading education built to develop disciplined, high-performance traders.
+          </p>
+          <div className="flex items-center gap-2 text-sm text-black">
+            <span>Global Mentorship Support</span>
+            <svg
+              className="h-4 w-4"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+              />
+            </svg>
+            <a href="tel:+919999866667" className="hover:underline">
+              +91 9999866667
+            </a>
+          </div>
         </div>
 
         {/* Mobile Menu */}

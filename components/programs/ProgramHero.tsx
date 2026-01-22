@@ -4,7 +4,7 @@ import Button from './Button';
 export default function ProgramHero(): ReactElement {
   return (
     <section className="bg-black py-16 md:py-24 lg:py-32">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto w-[85%] px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-4xl text-center space-y-8">
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-green-500 leading-tight">
             Learn the skill once.

@@ -113,7 +113,7 @@ const specializedModules: SpecializedModule[] = [
 export default function Path2SpecializedModules(): ReactElement {
   return (
     <section className="bg-white py-12 md:py-16">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto w-[85%] px-4 sm:px-6 lg:px-8">
         <div className="mb-8">
           <h2 className="mb-2 text-3xl font-bold text-black">
             Path 2: Specialized Deep-Dive Modules

@@ -4,7 +4,7 @@ import Link from 'next/link';
 export default function StrategiesHero(): ReactElement {
   return (
     <section className="bg-white py-16 md:py-24">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto w-[85%] px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-4xl text-center space-y-6">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
             The Global Standard in Institutional Trading Strategies & Research

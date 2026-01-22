@@ -21,7 +21,7 @@ export default function ProgramSection({
 
   return (
     <section className={`${backgroundColor} py-12 md:py-16`}>
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto w-[85%] px-4 sm:px-6 lg:px-8">
         <div className={`mx-auto ${widthClass} ${textAlignClass} space-y-6`}>
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 uppercase leading-tight">
             {title}
