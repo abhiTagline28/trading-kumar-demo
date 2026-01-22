@@ -1,5 +1,6 @@
 import Header from '@/components/Header';
 import Hero from '@/components/Hero';
+import ValueProposition from '@/components/ValueProposition';
 import TradingCategories from '@/components/TradingCategories';
 import PopularPrograms from '@/components/PopularPrograms';
 import MentorshipBanner from '@/components/MentorshipBanner';
@@ -13,8 +14,9 @@ export default function Home() {
       <Header />
       <main>
         <Hero />
-        <TradingCategories />
+        <ValueProposition />
         <PopularPrograms />
+        <TradingCategories />
         <MentorshipBanner />
         <CommunitySection />
         <TestimonialsCarousel />
