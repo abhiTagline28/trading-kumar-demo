@@ -74,38 +74,212 @@ export default function Header() {
                 <div
                   onMouseEnter={() => setIsCoursesOpen(true)}
                   onMouseLeave={() => setIsCoursesOpen(false)}
-                  className="absolute left-0 top-full mt-2 w-48 rounded-md bg-white shadow-lg"
+                  className="absolute left-0 top-full mt-2 w-[1000px] rounded-md bg-white shadow-xl border border-gray-100"
                 >
-                  <Link
-                    href="/courses/stocks"
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                  >
-                    Stocks
-                  </Link>
-                  <Link
-                    href="/courses/futures-options"
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                  >
-                    Futures & Options
-                  </Link>
-                  <Link
-                    href="/courses/commodity"
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                  >
-                    Commodity
-                  </Link>
-                  <Link
-                    href="/courses/crypto"
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                  >
-                    Crypto
-                  </Link>
-                  <Link
-                    href="/courses/forex"
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                  >
-                    Forex
-                  </Link>
+                  <div className="p-8">
+                    {/* Main Courses Section */}
+                    <div className="mb-8 space-y-5">
+                      {/* Institutional Order Flow */}
+                      <div className="grid grid-cols-[1fr_auto] items-start gap-8">
+                        <Link
+                          href="/courses/institutional-order-flow"
+                          className="group flex items-center text-sm font-medium text-gray-900 hover:text-black"
+                        >
+                          <span>
+                            Institutional Order Flow & Volume Footprint Trading
+                            Strategist (#1 Choice)
+                          </span>
+                          <svg
+                            className="ml-2 h-4 w-4 text-gray-400"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth={2}
+                              d="M9 5l7 7-7 7"
+                            />
+                          </svg>
+                        </Link>
+                        <div className="flex flex-col gap-2.5">
+                          <Link
+                            href="/mentorship/vip?course=institutional-order-flow"
+                            className="whitespace-nowrap rounded border border-gray-300 bg-white px-5 py-2.5 text-center text-sm font-medium text-gray-900 transition-all hover:bg-gray-50 hover:border-gray-400"
+                          >
+                            1-on-1 VIP Mentorship
+                          </Link>
+                          <Link
+                            href="/mentorship/group?course=institutional-order-flow"
+                            className="whitespace-nowrap rounded border border-gray-300 bg-white px-5 py-2.5 text-center text-sm font-medium text-gray-900 transition-all hover:bg-gray-50 hover:border-gray-400"
+                          >
+                            Group Mentorship
+                          </Link>
+                        </div>
+                      </div>
+
+                      {/* Trading Titan */}
+                      <div className="grid grid-cols-[1fr_auto] items-start gap-8">
+                        <Link
+                          href="/courses/trading-titan"
+                          className="group flex items-center text-sm font-medium text-gray-900 hover:text-black"
+                        >
+                          <span>Trading Titan</span>
+                          <svg
+                            className="ml-2 h-4 w-4 text-gray-400"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth={2}
+                              d="M9 5l7 7-7 7"
+                            />
+                          </svg>
+                        </Link>
+                        <div className="flex flex-col gap-2.5">
+                          <Link
+                            href="/mentorship/vip?course=trading-titan"
+                            className="whitespace-nowrap rounded border border-gray-300 bg-white px-5 py-2.5 text-center text-sm font-medium text-gray-900 transition-all hover:bg-gray-50 hover:border-gray-400"
+                          >
+                            1-on-1 VIP Mentorship
+                          </Link>
+                          <Link
+                            href="/mentorship/group?course=trading-titan"
+                            className="whitespace-nowrap rounded border border-gray-300 bg-white px-5 py-2.5 text-center text-sm font-medium text-gray-900 transition-all hover:bg-gray-50 hover:border-gray-400"
+                          >
+                            Group Mentorship
+                          </Link>
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* Specialized Modules Section */}
+                    <div className="border-t border-gray-200 pt-6">
+                      <h3 className="mb-5 text-xs font-semibold uppercase tracking-wider text-gray-500">
+                        SPECIALIZED MODULE
+                      </h3>
+                      <div className="space-y-3.5">
+                        {[
+                          {
+                            title: 'The Volume Footprint: The Ultimate Truth',
+                            href: '/courses/volume-footprint',
+                            mentorshipHref: '/mentorship/group?module=volume-footprint',
+                          },
+                          {
+                            title: 'Order Flow Volume Profile: The Value Map',
+                            href: '/courses/order-flow-volume-profile',
+                            mentorshipHref: '/mentorship/group?module=order-flow-volume-profile',
+                          },
+                          {
+                            title: 'The Smart Money Trap (Order Blocks/FVG)',
+                            href: '/courses/smart-money-trap',
+                            mentorshipHref: '/mentorship/group?module=smart-money-trap',
+                          },
+                          {
+                            title: 'The Volume Engine (Delta/CVD)',
+                            href: '/courses/volume-engine',
+                            mentorshipHref: '/mentorship/group?module=volume-engine',
+                          },
+                          {
+                            title: 'The Parallel Channel & Institutional Zones',
+                            href: '/courses/parallel-channel',
+                            mentorshipHref: '/mentorship/group?module=parallel-channel',
+                          },
+                          {
+                            title: 'Central Pivot Range (CPR)',
+                            href: '/courses/central-pivot-range',
+                            mentorshipHref: '/mentorship/group?module=central-pivot-range',
+                          },
+                          {
+                            title: 'Pivot Points Mastery',
+                            href: '/courses/pivot-points',
+                            mentorshipHref: '/mentorship/group?module=pivot-points',
+                          },
+                          {
+                            title: 'VWAP: The Institutional Benchmark',
+                            href: '/courses/vwap',
+                            mentorshipHref: '/mentorship/group?module=vwap',
+                          },
+                          {
+                            title: 'Anchored VWAP: Event-Based Power',
+                            href: '/courses/anchored-vwap',
+                            mentorshipHref: '/mentorship/group?module=anchored-vwap',
+                          },
+                          {
+                            title: 'The Dual-Layer Trend Filter (EMA/SMA)',
+                            href: '/courses/dual-layer-trend-filter',
+                            mentorshipHref: '/mentorship/group?module=dual-layer-trend-filter',
+                          },
+                          {
+                            title: 'Candle Wick & Body Psychology',
+                            href: '/courses/candle-psychology',
+                            mentorshipHref: '/mentorship/group?module=candle-psychology',
+                          },
+                          {
+                            title: 'Fibonacci: Institutional Discount',
+                            href: '/courses/fibonacci',
+                            mentorshipHref: '/mentorship/group?module=fibonacci',
+                          },
+                          {
+                            title: 'TradingView Mastery',
+                            href: '/courses/tradingview-mastery',
+                            mentorshipHref: '/mentorship/group?module=tradingview-mastery',
+                          },
+                          {
+                            title: 'Strategic Risk Management',
+                            href: '/courses/risk-management',
+                            mentorshipHref: '/mentorship/group?module=risk-management',
+                          },
+                          {
+                            title: 'Trading Psychology',
+                            href: '/courses/trading-psychology',
+                            mentorshipHref: '/mentorship/group?module=trading-psychology',
+                          },
+                          {
+                            title: "Trader's Tax Advantage",
+                            href: '/courses/traders-tax-advantage',
+                            mentorshipHref: '/traders-tax',
+                            mentorshipLabel: "Trader's Tax Strategist",
+                          },
+                        ].map((module) => (
+                          <div
+                            key={module.href}
+                            className="grid grid-cols-[1fr_auto] items-center gap-8"
+                          >
+                            <Link
+                              href={module.href}
+                              className="group flex items-center text-sm text-gray-700 hover:text-black"
+                            >
+                              <span>{module.title}</span>
+                              <svg
+                                className="ml-2 h-4 w-4 text-gray-400"
+                                fill="none"
+                                stroke="currentColor"
+                                viewBox="0 0 24 24"
+                              >
+                                <path
+                                  strokeLinecap="round"
+                                  strokeLinejoin="round"
+                                  strokeWidth={2}
+                                  d="M9 5l7 7-7 7"
+                                />
+                              </svg>
+                            </Link>
+                            <Link
+                              href={module.mentorshipHref}
+                              className="whitespace-nowrap rounded border border-gray-300 bg-white px-5 py-2.5 text-center text-sm font-medium text-gray-900 transition-all hover:bg-gray-50 hover:border-gray-400"
+                            >
+                              {module.mentorshipLabel || 'Group Mentorship'}
+                            </Link>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
                 </div>
               )}
             </div>
