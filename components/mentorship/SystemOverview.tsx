@@ -26,15 +26,6 @@ export default function SystemOverview(): ReactElement {
               Whether you are navigating the opening volatility of Mumbai and Tokyo, or tracking the high-stakes liquidity of London, New York, and Hong Kong, the physics of the market never changes. We provide the original, data-backed blueprint to decode institutional money in real-time—across every major exchange and every timezone.
             </p>
           </div>
-
-          <div className="bg-gray-900 rounded-lg p-8 text-center">
-            <p className="text-white text-lg font-semibold mb-4">
-              One Framework. Universal Liquidity.
-            </p>
-            <p className="text-gray-300">
-              Deployed daily across NSE, BSE, NASDAQ, LSE, and Global Crypto Exchanges.
-            </p>
-          </div>
         </div>
       </div>
     </section>

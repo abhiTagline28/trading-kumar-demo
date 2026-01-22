@@ -12,11 +12,6 @@ export default function MentorshipHero(): ReactElement {
           <p className="text-lg md:text-xl text-gray-300 leading-relaxed">
             Master the transition from retail trader to modern, full-time professional. Replace lagging indicators with Market Footprint and Institutional Order Flow to decode real liquidity, intent, and participation. Command a rule-based framework built on pure market logic to dominate Stocks, Options, Futures, Crypto, and Forex.
           </p>
-          <div className="pt-4">
-            <Button href="/mentorship/enroll" variant="primary" className="bg-blue-600 hover:bg-blue-700">
-              Secure My Seat in The Mentorship
-            </Button>
-          </div>
         </div>
       </div>
     </section>

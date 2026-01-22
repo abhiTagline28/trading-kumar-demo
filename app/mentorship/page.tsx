@@ -3,6 +3,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import MentorshipHero from '@/components/mentorship/MentorshipHero';
 import MentorshipIntro from '@/components/mentorship/MentorshipIntro';
+import EliteSection from '@/components/mentorship/EliteSection';
 import ProfessionalProfiles from '@/components/mentorship/ProfessionalProfiles';
 import WhyChooseUs from '@/components/mentorship/WhyChooseUs';
 import EliteBadgeRow from '@/components/mentorship/EliteBadgeRow';
@@ -24,14 +25,15 @@ export default function MentorshipPage(): ReactElement {
       <main>
         <MentorshipHero />
         <MentorshipIntro />
+        <EliteSection />
         <ProfessionalProfiles />
         <WhyChooseUs />
         <EliteBadgeRow />
         <MentorshipRoadmap />
         <SystemOverview />
         <GlobalExchangesMap />
-        <MessageToProfessional />
         <MentorshipFAQ />
+        <MessageToProfessional />
       </main>
       <Footer />
     </div>
