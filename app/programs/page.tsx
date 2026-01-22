@@ -11,21 +11,6 @@ import MediaPartnersSection from '@/components/programs/MediaPartnersSection';
 import Button from '@/components/programs/Button';
 
 export default function ProgramsPage(): ReactElement {
-  const mainPrograms = [
-    {
-      title: 'INSTITUTIONAL ORDER FLOW & VOLUME FOOTPRINT TRADING STRATEGIST',
-      description:
-        'An original, institutional-grade research-driven trading program built on institutional order flow, enabling disciplined, rule-based trading execution across multiple assets.',
-      backgroundColor: 'bg-gradient-to-b from-yellow-50 to-white',
-    },
-    {
-      title: 'TRADING TITAN',
-      description:
-        'An original, institutional-grade, deeply researched trading program built on pure price action and volume, designed for disciplined, rule-based trading execution.',
-      backgroundColor: 'bg-gradient-to-b from-blue-50 to-white',
-    },
-  ];
-
   const precisionTradingPrograms = [
     {
       title: 'ORDER FLOW VOLUME PROFILE: THE INSTITUTIONAL VALUE MAP',
@@ -122,33 +107,63 @@ export default function ProgramsPage(): ReactElement {
         {/* Program Introduction */}
         <ProgramIntro title="From Retail to Institutional: The Complete Trading Mentorship Program" />
 
-        {/* Main Programs */}
-        <section className="bg-white py-12 md:py-16">
+        {/* Institutional Order Flow Section */}
+        <section className="bg-[#F8F0E3] py-16 md:py-24 lg:py-32">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <ProgramGrid programs={mainPrograms} columns={1} />
-          </div>
-        </section>
-
-        {/* Trading Titan Hero */}
-        <section className="bg-[#E0F7FA] py-12 md:py-16">
-          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div className="mx-auto max-w-4xl text-center space-y-6">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 uppercase">
-                TRADING TITAN
-              </h2>
-              <p className="text-lg text-gray-700">
-                An original, institutional-grade, deeply researched trading program built on pure price action and volume, designed for disciplined, rule-based trading execution.
+            <div className="mx-auto max-w-4xl text-center space-y-8">
+              <div className="space-y-4">
+                <h2 className="text-4xl md:text-5xl lg:text-6xl font-black text-gray-900 uppercase leading-tight">
+                  INSTITUTIONAL ORDER FLOW & VOLUME FOOTPRINT
+                </h2>
+                <h3 className="text-3xl md:text-4xl lg:text-5xl font-black text-gray-900 uppercase leading-tight">
+                  TRADING STRATEGIST
+                </h3>
+              </div>
+              <p className="text-lg md:text-xl text-gray-700 leading-relaxed max-w-3xl mx-auto">
+                An original, institutional-grade research-driven trading program built on institutional order flow, enabling disciplined, rule-based trading execution across multiple assets.
               </p>
-              <div className="flex flex-wrap justify-center gap-4 pt-4">
+              <div className="flex flex-wrap justify-center gap-4 pt-6">
                 <Button
-                  href="/programs/trading-titan/learn-more"
+                  href="/programs/institutional-order-flow/learn-more"
                   variant="primary"
+                  className="min-w-[140px]"
                 >
                   Learn more
                 </Button>
                 <Button
                   href="/programs/enroll"
                   variant="primary"
+                  className="min-w-[280px]"
+                >
+                  Secure My Seat In The Mentorship
+                </Button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Trading Titan Hero */}
+        <section className="bg-gradient-to-b from-blue-50 to-blue-100 py-16 md:py-24 lg:py-32">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div className="mx-auto max-w-4xl text-center space-y-8">
+              <h2 className="text-4xl md:text-5xl lg:text-6xl font-black text-gray-900 uppercase leading-tight">
+                TRADING TITAN
+              </h2>
+              <p className="text-lg md:text-xl text-gray-700 leading-relaxed max-w-3xl mx-auto">
+                An original, institutional-grade, deeply researched trading program built on pure price action and volume, designed for disciplined, rule-based trading execution.
+              </p>
+              <div className="flex flex-wrap justify-center gap-4 pt-6">
+                <Button
+                  href="/programs/trading-titan/learn-more"
+                  variant="primary"
+                  className="min-w-[140px]"
+                >
+                  Learn more
+                </Button>
+                <Button
+                  href="/programs/enroll"
+                  variant="primary"
+                  className="min-w-[280px]"
                 >
                   Secure My Seat in The Mentorship
                 </Button>
