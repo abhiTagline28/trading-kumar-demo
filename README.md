@@ -1,36 +1,133 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Kumar Singh Trading Education Platform
+
+A modern, responsive Next.js website for Kumar Singh's world-class trading education and mentorship platform.
+
+## Features
+
+- **Modern Design**: Clean, professional UI built with Tailwind CSS
+- **Responsive Layout**: Fully responsive design that works on all devices
+- **Component-Based Architecture**: Modular, reusable components
+- **TypeScript**: Full type safety throughout the application
+- **Performance Optimized**: Built with Next.js 16 for optimal performance
+
+## Project Structure
+
+```
+kumar-demo/
+├── app/
+│   ├── layout.tsx       # Root layout with metadata
+│   ├── page.tsx         # Homepage
+│   └── globals.css      # Global styles
+├── components/
+│   ├── Header.tsx        # Navigation header with search
+│   ├── Hero.tsx         # Hero section with tagline
+│   ├── TradingCategories.tsx  # Trading category cards
+│   ├── PopularPrograms.tsx    # Featured programs section
+│   ├── MentorshipBanner.tsx   # Mentorship CTA banner
+│   ├── CommunitySection.tsx    # Community trust section
+│   ├── TestimonialsCarousel.tsx # Testimonials slider
+│   └── Footer.tsx       # Footer with links
+└── public/              # Static assets (images, etc.)
+```
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+- Node.js 18+ 
+- npm or yarn
+
+### Installation
+
+```bash
+npm install
+```
+
+### Development
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Build
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+```
 
-## Learn More
+### Production
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+npm start
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Adding Images
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+The following images need to be added to the `public/` directory:
 
-## Deploy on Vercel
+1. **`/public/kumar-singh.jpg`** - Hero section image (Kumar Singh's portrait)
+2. **`/public/trading-chart.jpg`** - Popular programs section chart graphic
+3. **`/public/trader-1.jpg`** through **`/public/trader-4.jpg`** - Testimonial carousel images
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+You can use placeholder images during development. The components include blur placeholders for better UX.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Components
+
+### Header
+- Responsive navigation menu
+- Dropdown for "All Courses"
+- Search bar
+- Sign In/Sign Up links
+- Mobile hamburger menu
+
+### Hero
+- Main tagline
+- "CHANGE THE WAY YOU TRADE" headline
+- Kumar Singh portrait
+- Global mentorship support contact info
+
+### Trading Categories
+- Interactive category cards:
+  - STOCKS
+  - FUTURE & OPTIONS
+  - COMMODITY
+  - CRYPTO
+  - FOREX
+  - ETFS AND MORE
+
+### Popular Programs
+- Featured program showcase
+- Call-to-action buttons
+- Trading chart graphic
+
+### Mentorship Banner
+- Dark blue banner with mentorship messaging
+- Professional, impactful design
+
+### Community Section
+- Trust messaging for traders worldwide
+
+### Testimonials Carousel
+- Interactive slider with navigation arrows
+- Dot indicators
+- Trader testimonials with locations
+
+### Footer
+- Resources links
+- Help section
+- Company information
+- Location indicator
+- Copyright and legal links
+
+## Technologies
+
+- **Next.js 16** - React framework
+- **TypeScript** - Type safety
+- **Tailwind CSS** - Styling
+- **React 19** - UI library
+
+## License
+
+Private - Kumar Singh Global Trading Academy (OPC) Pvt. Ltd.
